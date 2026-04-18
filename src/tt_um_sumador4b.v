@@ -1,3 +1,5 @@
+`default_nettype none
+
 module tt_um_sumador4b (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
@@ -20,4 +22,6 @@ sumador_4b sum(
     .cout_out(uo_out[4])
 );
 
+wire _unused = &{ena, uio_in, 1'b0};
+    
 endmodule
