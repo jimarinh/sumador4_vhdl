@@ -23,5 +23,9 @@ sumador_4b sum(
 );
 
 wire _unused = &{ena, uio_in, 1'b0};
+
+assign uo_out[7:5] = 3'b0;
+assign uio_out = 8'bz;
+assign uio_oe = 8'b0;
     
 endmodule
